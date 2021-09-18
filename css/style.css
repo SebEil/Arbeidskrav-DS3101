@@ -59,8 +59,8 @@
 
 .navbar .navbar__burger:hover {
   color: #7a796f;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .navbar__menu {
@@ -72,6 +72,12 @@
 @media screen and (max-width: 768px) {
   .navbar__menu {
     display: none;
+    margin-top: 60px;
+    margin-right: 0;
+    opacity: 100%;
+    background-color: #A6A498;
+    height: 180px;
+    max-height: 180px;
   }
 }
 
@@ -110,9 +116,8 @@
 .hero__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: repeat(12, 1fr);
-        grid-template-columns: repeat(12, 1fr);
-    
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -121,19 +126,7 @@
           justify-content: center;
   width: 100%;
   max-width: 1200px;
-  grid-gap: 1rem;  
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 768px) {
   .hero__container {
