@@ -1,0 +1,21 @@
+@import 'colors';
+
+.navbar{
+
+    background: $dark;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    z-index: 10;
+    position: relative;
+
+    .navbar__links{
+
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
