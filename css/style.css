@@ -1,4 +1,4 @@
-.navbar .navbar__logo, .navbar__links, .navbar__links--link {
+.navbar .navbar__logo, .navbar__menu, .navbar__menu--links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,18 +58,19 @@
   }
 }
 
-.navbar__links {
+.navbar__menu {
   list-style: none;
   text-align: center;
+  margin-right: 24px;
 }
 
 @media screen and (max-width: 768px) {
-  .navbar__links {
+  .navbar__menu {
     display: none;
   }
 }
 
-.navbar__links--link {
+.navbar__menu--links {
   color: #86a873;
   margin-right: 30px;
   text-decoration: none;
@@ -77,7 +78,7 @@
   padding: 0 1rem;
 }
 
-.navbar__links--link:hover {
+.navbar__menu--links:hover {
   color: #000000;
   -webkit-transition: 1.5s ease-in-out;
   transition: 1.5s ease-in-out;
@@ -103,5 +104,23 @@
 .hero__container {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

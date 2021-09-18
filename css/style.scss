@@ -19,5 +19,15 @@
 
     &__container {
         display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 1200px;
+
+        @include tablet{
+            grid-template-columns: 1fr;
+            height: 100%;
+        }
     }
   }
