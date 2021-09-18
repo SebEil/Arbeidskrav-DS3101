@@ -8,13 +8,14 @@
 
 .navbar{
 
-    background: $secondary;
+    background: $third;
     height: 60px;
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem;
+    ;
     z-index: 10;
     position: relative;
+    
 
     .navbar__links{
 
@@ -37,6 +38,7 @@
     &__burger{
         opacity: 0;
 
+
         @include tablet{
             color: $primary;
             opacity: 1;
@@ -47,32 +49,52 @@
         }
     }
 
+    .navbar__burger:hover{
+        color:  #7a796f;
+        -webkit-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+    }
+
     &__menu{
+        
 
         @extend %align-center;
         list-style: none;
         text-align: center;
-        margin-right: 24px;
+        margin-right: 1px;
 
         @include tablet{
             display: none;
+
+            //Er noe fakky med media queries og menyen//
+            
+            margin-top: 60px;
+            margin-right: 0;
+            opacity: 100%;
+            background-color: $secondary;
+            height: 180px;
+            max-height: 180px;
+
         }
 
         &--links{
             @extend %align-center;
             color: $primary;
-            margin-right: 30px;
+            
             text-decoration: none;
             text-transform: uppercase;
-            padding: 0 1rem;
-
+            padding: 1.3rem;
+            margin-right: 0%;
             &:hover{
-                color: $dark;
+                color: $primary *1.5;
                 transition: 1.5s ease-in-out;
+                background-color: $secondary * 0.5;
             }
         }
 
 
     }
+
+    
 
 }
