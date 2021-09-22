@@ -1,13 +1,6 @@
-@import 'navbar';
-@import 'colors';
-
-*{
-
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
+@use 'navbar';
+@use 'colors';
+@use 'meyers-reset-modified';
 
 .hero {
     background-image: url("/images/pasta.jpg");
